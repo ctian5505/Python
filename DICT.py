@@ -15,6 +15,11 @@
     #Assessment #2, Module 9 File handling
     #Hands-on Assessment, Closing Ceremony
 
+#------------------------------------------------------------------------------------------------------
+  #Week 1 (Setp 9, 2023)
+    #Module 1 Intrduction to Python Progamming Essentrials Training
+    #Module 2 Strings and Conditions
+
 employee_name = input("Employee Name: ")
 no_of_hours = int(input("Enter number of hours: "))
 sss = int(input("SSS contribution: "))
@@ -40,3 +45,20 @@ print("Tax:", tax)
 print("Total Deductions:", total_deduction)
 print("")
 print("Net Salary:PHP", net_salary)
+#------------------------------------------------------------------------------------------------------
+  #Week 2 (Sept 16,2023)
+    #Module 3 Sttructures, Sequence and Selection
+    #Module 4 Iteration
+
+
+
+
+
+
+
+
+
+
+
+
+
