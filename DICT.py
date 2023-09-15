@@ -20,6 +20,47 @@
     #Module 1 Intrduction to Python Progamming Essentrials Training
     #Module 2 Strings and Conditions
 
+#Day 1 Act 1
+first_name = "Christian"
+last_name = "Espinosa"
+hours_worked = 8
+rate_per_hour = 100
+deduction = 5
+
+print("Firstname:",first_name)
+print("Lastname:",last_name)
+print("Hours Worked",hours_worked)
+print("Rate per hour:",rate_per_hour)
+print("Deduction:",deduction)
+
+#Day 1 Act 2
+first_name = input("Enter First Name: ")
+last_name = input("Enter last Name: ")
+hours_worked = int(input("Enter Hours Worked: "))
+rate_per_hour = int(input("Enter Rate per hour: "))
+deduction = int(input("Enter Deduction: "))
+salary = hours_worked * rate_per_hour - deduction
+
+print("Firstname:",first_name)
+print("Lastname:",last_name)
+print("Hours Worked",hours_worked)
+print("Rate per hour:",rate_per_hour)
+print("Deduction:",deduction)
+print("Salary: ",float(salary))
+
+
+#Day 1 Act 3
+noun1 = input("Enter the first noun: ").upper() # Jhon
+noun2 = input("Enter the second noun: ").upper() # Porridge
+adjectives1 = input("Enter the first adjectives: ").upper() # Cooking
+adjectives2 = input("Enter the second adjectives: ").upper() # delicious
+original_poem = "You go home one evening tired from work,\nand your mother boils you a turtle soup. \nTwelve hours hunched over the hearth"
+
+print("\nOriginal Poem\n"+original_poem)
+print("\nResult")
+print(original_poem.replace("your mother",noun1).replace("boils",adjectives1).replace("turtle",adjectives2).replace("soup",noun2))
+
+#Day 1 Act 4  Assignment
 employee_name = input("Employee Name: ")
 no_of_hours = int(input("Enter number of hours: "))
 sss = int(input("SSS contribution: "))
