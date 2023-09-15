@@ -1,3 +1,20 @@
+#Course Outline
+  #Week 1 (Setp 9, 2023)
+    #Module 1 Intrduction to Python Progamming Essentrials Training
+    #Module 2 Strings and Conditions
+  #Week 2 (Sept 16,2023)
+    #Module 3 Sttructures, Sequence and Selection
+    #Module 4 Iteration
+  #Week 3 (Sept 23, 2023)
+    #Assessment #1, Module 5 Functions
+    #Module 6 Tuple
+  #Week 4 (Sept 30, 2023)
+    #Module 7 Exceptions and blocks
+    #Module 8  Objects
+  #Week 5 (Oct 7, 2023) 
+    #Assessment #2, Module 9 File handling
+    #Hands-on Assessment, Closing Ceremony
+
 employee_name = input("Employee Name: ")
 no_of_hours = int(input("Enter number of hours: "))
 sss = int(input("SSS contribution: "))
