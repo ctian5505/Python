@@ -91,6 +91,66 @@ print("Net Salary:PHP", net_salary)
     #Module 3 Sttructures, Sequence and Selection
     #Module 4 Iteration
 
+## Day2 Act 1
+
+name = input("Enter your name: ")
+math = float(input("Enter your math grade: "))
+sci = float(input("Enter your science grade: "))
+eng = float(input("Enter your english grade: "))
+average =int((math + sci + eng)/3)
+
+print(f"Your average is {average}")
+if average >= 75:
+    print("Congratulations! You passed the semester.")
+    if math < 75:
+        print("But you need to re-enroll to re-enroll Math subject")
+    elif sci < 75:
+        print("But you need to re-enroll to re-enroll Science subject")
+    elif eng < 75:
+        print("But you need to re-enroll English subject")
+else:
+    print("You failed the semester.")
+
+##Day2 Act2
+
+office = input("Enter your office department [it, acct, hr]: ")
+year_in_service = int(input("Years in service: "))
+
+if office == "it" and year_in_service >= 10:
+    print(f"Office: {office}")
+    print(f"Years in service: {year_in_service}")
+    print("Your incentives for serving it department for more than 10 years is 10000")
+elif office == "it" and year_in_service <= 10:
+    print(f"Office: {office}")
+    print(f"Years in service: {year_in_service}")
+    print("Your incentives for serving it department below 10 years is 5000")
+elif office == "acct" and year_in_service >= 10:
+    print(f"Office: {office}")
+    print(f"Years in service: {year_in_service}")
+    print("Your Incentives for serving acct department for more than 10 years is 12000")
+elif office == "acct" and year_in_service <= 10:
+    print(f"Office: {office}")
+    print(f"Years in service: {year_in_service}")
+    print("Your incentives for serving acct department below 10 years is 6000")
+elif office == "hr" and year_in_service >= 10:
+    print(f"Office: {office}")
+    print(f"Years in service: {year_in_service}")
+    print("Your Incentives for serving hr department for more than 10 years is 15000")
+elif office == "hr" and year_in_service <= 10:
+    print(f"Office: {office}")
+    print(f"Years in service: {year_in_service}")
+    print("Your incentives for serving hr department below 10 years is 7500")
+else:
+    print("Invalid input")
+
+## Day2 Act3
+
+msg = 1
+
+while msg <= 20:
+    print(f"Python while loop number {msg}")
+    msg +=1
+
 
 
 
