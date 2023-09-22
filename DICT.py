@@ -151,6 +151,16 @@ while msg <= 20:
     print(f"Python while loop number {msg}")
     msg +=1
 
+##Day2 Act5
+
+word_bank = []
+yn = input("Do you want to add word? Y/y = Yes | N/n = No: ")
+while yn == "y" or yn == "Y":
+    word = input("Enter a word: ")
+    word_bank.append(word)
+    yn = input("Do you want to add more word? Y/y = Yes | N/n = No: ")
+print(f"Total number of words: {len(word_bank)}")
+print(word_bank)
 
 
 
