@@ -1,0 +1,45 @@
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time
+import pandas as pd
+
+
+service = Service(executable_path="chromedriver.exe")
+driver = webdriver.Chrome()
+
+driver.get("https://www.onlinejobs.ph/")
+
+#Enter  Disise work to find
+work = "Virtual Assistant"
+#Locate the Search Area
+looking_for_work = driver.find_element(By.XPATH, '//form[@action="/jobseekers/jobsearch"]')
+#Search the job limited tp search area on only
+search_job = looking_for_work.find_element(By.XPATH,'//input[@name="jobkeyword"]')
+search_job.send_keys(work)
+submit_search = looking_for_work.find_element(By.CSS_SELECTOR, ".btn.btn.btn-primary.btn-rounded.text-uppercase.fs-16.fw-700")
+submit_search.click()
+
+time.sleep(3)
+
+#Scrape Job Title
+job_name = []
+job_poster = []
+job_posted_date = []
+
+job_find_area = driver.find_elements(By.XPATH, '//div[contains(@class, "jobpost-cat-box")]')
+
+for job in job_find_area:
+     job_name.append(job.find_element(By.CSS_SELECTOR,".fs-16.fw-700").text)
+     job_poster.append(job.find_element(By.CSS_SELECTOR,".fs-13.mb-0").text.strip().split("•")[0])
+     job_posted_date.append(job.find_element(By.CSS_SELECTOR, ".fs-13.mb-0").text.strip().split("•")[1].replace("Posted on ",""))
+
+
+
+time.sleep(5)
+
+df = pd.DataFrame({"Job Name": job_name, "Job ": job_poster, "Job Post Date": job_posted_date})
+df.to_csv("OLPH.csv", index=False)
+
+print(df)
